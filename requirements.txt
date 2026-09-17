@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+statsmodels
+scikit-learn
+plotly
+streamlit
+yfinance
+pandas-datareader
+pytest
+gs-quant
+fastapi
+uvicorn[standard]

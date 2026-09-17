@@ -1,0 +1,25 @@
+# OS / editor
+.DS_Store
+._*
+.vscode/
+.idea/
+.claude/settings.local.json
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+*.log

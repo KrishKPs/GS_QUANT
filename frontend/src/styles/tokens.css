@@ -1,0 +1,91 @@
+/* Design tokens — "Research Terminal". Dark is default; light inverts surfaces. */
+:root {
+  --bg: #0E141B;
+  --surface: #151E29;
+  --surface-2: #1B2632;
+  --line: #26313F;
+  --line-soft: #1E2833;
+  --text: #E6EDF3;
+  --text-muted: #8A97A6;
+  --text-dim: #5C6875;
+  --accent: #5B8DEF;
+  --accent-quiet: #1D2C47;
+  --pos: #3FB950;
+  --neg: #F85149;
+
+  --f-mkt: #4C78A8;
+  --f-smb: #72B7B2;
+  --f-hml: #E45756;
+  --f-rmw: #54A24B;
+  --f-mom: #EECA3B;
+  --f-idio: #9C9C9C;
+
+  --r-panel: 12px;
+  --r-control: 8px;
+  --r-pill: 6px;
+  --s: 8px;
+  --shadow-hero: 0 8px 24px rgba(0, 0, 0, .35);
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+[data-theme="light"] {
+  --bg: #F6F8FB;
+  --surface: #FFFFFF;
+  --surface-2: #EEF2F7;
+  --line: #D7DFE9;
+  --line-soft: #E6ECF3;
+  --text: #0E141B;
+  --text-muted: #55616F;
+  --text-dim: #7A8794;
+  --accent: #2E63C8;
+  --accent-quiet: #DDE7FA;
+  --shadow-hero: 0 8px 24px rgba(14, 20, 27, .10);
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, nav, button, th, .display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 32px; line-height: 1.1; margin: 0; font-weight: 600; }
+h2 { font-size: 24px; line-height: 1.15; margin: 0; font-weight: 600; }
+h3 { font-size: 19px; line-height: 1.2; margin: 0; font-weight: 600; }
+
+.mono, .num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.prose { max-width: 72ch; color: var(--text-muted); }
+
+a { color: var(--accent); }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection { background: var(--accent-quiet); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
