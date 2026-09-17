@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 
 PERIODS_PER_YEAR = 252
-MIN_OBS = 60  # refuse regressions / decompositions below this (CLAUDE.md §4)
+MIN_OBS = 60  # refuse regressions / decompositions below this
 
 
 def annualise_mean(x: float | pd.Series, periods: int = PERIODS_PER_YEAR):

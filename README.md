@@ -5,8 +5,8 @@ Analytics engine is **gs-quant** (`gs_quant.timeseries`, offline — no Marquee
 credentials); HAC inference, Euler risk decomposition, Ledoit–Wolf, Cornish–Fisher
 and the optimisers are built on top. Nothing here forecasts anything.
 
-- `core/` — the maths, pure and unit-tested (`CLAUDE.md` is the spec)
-- `api.py` — FastAPI JSON API over `core/` (contract in `frontend.md` §9)
+- `core/` — the maths, pure and unit-tested
+- `api.py` — FastAPI JSON API over `core/`
 - `frontend/` — React + Vite + TypeScript UI, eight views
 - `app.py` — the original Streamlit UI, superseded by the React frontend
 

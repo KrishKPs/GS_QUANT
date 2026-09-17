@@ -84,7 +84,7 @@ def percentile(x: pd.Series, pct: float) -> float:
 def winsorize(x: pd.Series, limit: float = 2.5) -> pd.Series:
     """gs-quant winsorisation at `limit` standard deviations.
 
-    Robustness toggle only — never applied silently (CLAUDE.md §4).
+    Robustness toggle only — never applied silently.
     """
     return _winsorize(x, limit, FULL)
 
